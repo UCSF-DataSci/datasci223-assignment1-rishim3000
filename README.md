@@ -50,10 +50,10 @@ This assignment will help you practice:
 
 ### Part 1: Update this README.md
 Replace the "Part 1" section with:
-- A brief introduction about yourself (first name only)
-- What you're hoping to get out of this course
-- Topics you would like to see included
-- A musical recommendation and a link to something about it (song, album, artist)
+- First name: Rishi
+- I'm hoping to continue getting familiar with core data science concepts in Python
+- I'd like to understand the foundations behind LLMs and importance in analyzing clinical data
+- Mac Miller is one of my favorite artists, check him out! https://open.spotify.com/album/5SKnXCvB4fcGSZu32o3LRY
 
 ### Part 2: Complete the email_hasher.py Script
 The email_hasher.py script should:
