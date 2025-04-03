@@ -19,7 +19,7 @@ def is_valid_email(email):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python email_hasher.py <email_address>")
+        print(f"Usage: python email_hasher.py <email_address>")
         sys.exit(1)
 
     email = sys.argv[1] #email from command line argument
