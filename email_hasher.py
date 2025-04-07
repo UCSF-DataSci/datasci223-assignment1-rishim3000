@@ -1,37 +1,41 @@
 import sys
 import hashlib
-import re
 
 def hash_email(email):
-    hash_object = hashlib.sha256()
-    data = email.encode("utf-8")
-    hash_object.update(data)
-    return hash_object.hexdigest()
+    """
+    Hash an email address using SHA-256 and return the hexadecimal digest.
+    
+    Args:
+        email (str): The email address to hash
+        
+    Returns:
+        str: The SHA-256 hash of the email in hexadecimal format
+    """
+    email_bytes = email.encode('utf-8')
+    sha256_hash = hashlib.sha256(email_bytes)
+    return sha256_hash.hexdigest()
 
 def write_hash_to_file(hash_value, filename="hash.email"):
-    with open(filename, "w") as file:
-        file.write(hash_value)
-
-def is_valid_email(email):
-    #checking for valid email address
-    email_regex = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$"
-    return re.match(email_regex, email) is not None   
+    """
+    Write a hash value to a file.
+    
+    Args:
+        hash_value (str): The hash value to write
+        filename (str): The name of the file to write to (default: "hash.email")
+    """
+    with open(filename, 'w') as f:
+        f.write(hash_value)
 
 def main():
+    """
+    Main function to process command line arguments and execute the script.
+    """
     if len(sys.argv) != 2:
-        print(f"Usage: python email_hasher.py <email_address>")
+        print("Usage: python email_hasher.py <email_address>")
         sys.exit(1)
-
-    email = sys.argv[1] #email from command line argument
-    
-    if not is_valid_email(email):
-        print("Invalid email address!")
-        sys.exit(1)
-
-    hash_value = hash_email(email) #hash value of email input
-    write_hash_to_file(hash_value) #write hash value to file
-
-    print(f"Email hashed to hash.email")   
+    email = sys.argv[1]
+    hash_value = hash_email(email)
+    write_hash_to_file(hash_value)
 
 if __name__ == "__main__":
     main()
