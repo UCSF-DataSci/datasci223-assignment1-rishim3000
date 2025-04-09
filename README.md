@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/6fFVVHyL)
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18980183)
 # GitHub and Python Foundations Assignment
 
 ## Overview
@@ -48,10 +50,10 @@ This assignment will help you practice:
 
 ### Part 1: Update this README.md
 Replace the "Part 1" section with:
-- A brief introduction about yourself (first name only)
-- What you're hoping to get out of this course
-- Topics you would like to see included
-- A musical recommendation and a link to something about it (song, album, artist)
+- First name: Rishi
+- I'm hoping to continue getting familiar with core data science concepts in Python
+- I'd like to understand the foundations behind LLMs and importance in analyzing clinical data
+- Mac Miller is one of my favorite artists, check him out! https://open.spotify.com/album/5SKnXCvB4fcGSZu32o3LRY
 
 ### Part 2: Complete the email_hasher.py Script
 The email_hasher.py script should:
